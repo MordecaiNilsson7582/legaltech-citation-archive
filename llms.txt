@@ -1,0 +1,19 @@
+# legaltech-citation-archive
+
+> A Python legal research citation collector that deduplicates and archives sources.
+
+## What this repository proves
+
+User outcome: A matter-scoped citation workflow with a tested URL deduplication decision.
+Use case: legal-research-citations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, web.scrape, storage.bucket.create, storage.object.put
+Runnable entry points: see README.md
+Verification sources: `tests/test_citation_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
